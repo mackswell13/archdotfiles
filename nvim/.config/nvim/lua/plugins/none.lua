@@ -8,7 +8,7 @@ return {
 		null_ls.setup({
 			debug = true,
 			sources = {
-                null_ls.builtins.formatting.erb_format,
+                null_ls.builtins.formatting.erb_lint,
 				null_ls.builtins.formatting.prettier.with({
 					filetypes = { "javascript", "javascriptreact", "typescript", "typescriptreact", "json", "yaml" }, -- Apply to JS/TS files
 				}),
