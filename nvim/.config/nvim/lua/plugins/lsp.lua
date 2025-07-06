@@ -44,6 +44,15 @@ return {
                 auto_start = true,
                 cmd = { "mise", "exec", "ruby", "--", "ruby-lsp" }
             })
+              
+
+            vim.diagnostic.config({
+                virtual_text = true,
+                signs = true,
+                underline = true,
+                update_in_insert = false,
+                severity_sort = true,
+            })
 
             vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
             vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, {})
